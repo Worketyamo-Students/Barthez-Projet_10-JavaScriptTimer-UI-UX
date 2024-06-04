@@ -1,0 +1,121 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    transition: all .1s ease;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.containeur{
+    width: 100%;
+    height: 100%;
+    color: linear-gradient(62.99deg, #F1EEF0 7.18%, #71757E 83.56%);
+    background: #010213 url(./3.png) center/cover no-repeat;
+    color: #71757E;
+}
+
+.date{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    font-size: 1.1rem;    
+}
+
+.timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    font-size: 6rem;
+    background-blend-mode: overlay;
+}
+
+.timeInfo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3.3rem 1.8rem;   
+    background: linear-gradient(144.48deg, #28272F 9.13%, #040404 62.89%);
+    border-radius: 1rem;
+    border: 2px solid #015564;
+    box-shadow: .2rem .2rem 1rem #f70f0f,
+                .2rem .2rem 1.5rem #f3f70f,
+                -.2rem -.2rem 1.5rem #f70f0f,
+                -.2rem -.2rem 1.8rem #f3f70f,
+                -.4rem -.4rem 1rem #2a8d32,
+                -.4rem -.4rem 1.5rem #1069dd,
+                .4rem .4rem 1.5rem #2a8d32,
+                .4rem .4rem 1.8rem #1069dd,    
+                -.4rem -.4rem 1rem #f70f0f,
+                -.4rem -.4rem 1.5rem #f3f70f,
+                .4rem .4rem 1.5rem #f70f0f,
+                .4rem .4rem 1.8rem #f3f70f,
+                .8rem .8rem 1rem #2a8d32,
+                .8rem .8rem 1.5rem #1069dd,
+                -.8rem -.8rem 1.5rem #2a8d32,
+                -.8rem -.8rem 1.8rem #1069dd;
+}
+
+.timeInfo span{
+    cursor: default;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+.timeInfo span:last-child{
+    font-size: 3rem;
+    padding: 0;
+    color: #c2c2e0;
+}
+
+.timeCtrl{
+    background: linear-gradient(144.48deg, #28272F 9.13%, #040404 62.89%);
+    color: #AAA;
+    border: 1px solid #FFFFFF24;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: .6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.timeCtrl:hover{
+    color: #fff;
+    border-color: #fff;git in
+}
+
+/* -------------------- PLACE A LA GESTION DU RESPONSIVE -------------------- */
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 250px) {
+    html{
+        font-size: 4px;
+    }
+}
